@@ -1,0 +1,31 @@
+Horn Antenna Design (10 GHz)
+
+Given:
+f = 10 GHz
+a = 2.286 cm, b = 1.016 cm
+G0 = 20 dB
+
+1. Gain (linear):
+   G = 10^(G0/10) = 100
+
+2. Wavelength:
+   λ = c/f = 3e8 / 1e10 = 0.03 m = 3 cm
+
+3. Cutoff freq (TE10):
+   fc = c/(2a) ≈ 6.56 GHz
+
+4. X1:
+   X1 = G / (2π√(2π)) = 6.345
+
+5. ρe:
+   ρe = X1·λ = 6.345 × 3 = 19.035 cm
+
+6. ρh:
+   ρh = (G² / (8π³)) (λ / ρe) ≈ 19.1 cm
+
+7. Aperture:
+   a1 = √(3λρh) = 13.1 cm
+   b1 = √(2λρe) = 10.69 cm
+
+8. Gain check:
+   G = (4πa1b1)/λ² ≈ 97.7 ≈ 20 dB
